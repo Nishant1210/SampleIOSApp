@@ -11,7 +11,7 @@ jobs:
       - name: Checkoutt
         uses: actions/checkout@v1
       - name: Build and Test
-        run: swift test
+        run: /usr/bin/xcodebuild test -project "$XC_PROJECT" -scheme "$XC_SCHEME" -destination 'platform=iOS Simulator,name=iPhone 11'
         env:
           DEVELOPER_DIR: /Applications/Xcode_11.4.app/Contents/Developer
     
