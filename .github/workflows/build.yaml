@@ -8,7 +8,7 @@ jobs:
   macos:
     runs-on: macOS-latest
     steps:
-      - name: Checkout
+      - name: Checkoutt
         uses: actions/checkout@v1
       - name: Build and Test
         run: swift test
